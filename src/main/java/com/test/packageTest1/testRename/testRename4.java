@@ -1,14 +1,14 @@
 package com.test.packageTest1.testRename;
 
-public class testRename3 {
+public class testRename4 {
 
     public String getName() {
-        name = "rename";
-        System.out.println("");
+        System.out.println("getName");
         return name;
     }
 
     public void setName(String name) {
+        name = "rename";
         this.name = name;
     }
 
@@ -16,11 +16,16 @@ public class testRename3 {
         return "hello";
     }
 
-    public class InnerClass1{
+    public class InnerClass2{
 
         public void test(){
-
+            setName("test");
         }
+
+    }
+
+    public interface InnerInterface{
+        public void test();
     }
 
     private String name;
