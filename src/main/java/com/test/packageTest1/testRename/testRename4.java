@@ -19,7 +19,9 @@ public class testRename4 {
     public class InnerClass2{
 
         public void test(){
-            setName("test");
+            if("rename".equals(name)){
+                setName("test");
+            }
         }
 
     }
@@ -29,5 +31,6 @@ public class testRename4 {
     }
 
     private String name;
+
 
 }
