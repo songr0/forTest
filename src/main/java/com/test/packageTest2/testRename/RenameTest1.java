@@ -1,4 +1,4 @@
-package com.test.packageTest1.testRename;
+package com.test.packageTest2.testRename;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -13,21 +13,23 @@ public class RenameTest1 {
      * @param code2 代码段2
      * @return
      */
-    public static double suffixSimilarity(String code1, String code2){
+    public static double suffixSimilarityTest(String code1, String code2){
         try{
             //token化
             List<Byte> tokens1 = lexer(code1);
             List<Byte> tokens2 = lexer(code2);
 
             //标记片段的token边界
-            List<Fragment> fragments = new ArrayList<>();
-            fragments.add(new Fragment(0, tokens1.size() - 1));
-            fragments.add(new Fragment(tokens1.size(), tokens1.size() + tokens2.size() - 1));
+            List<FragmentTest> fragments = new ArrayList<>();
+            fragments.add(new FragmentTest(0, tokens1.size() - 1));
+            fragments.add(new FragmentTest(tokens1.size(), tokens1.size() + tokens2.size() - 1));
 
             //后缀数组检测重叠片段
             List<Byte> tokens = new ArrayList<>();
             tokens.addAll(tokens1);
             tokens.addAll(tokens2);
+            System.out.println(tokens1);
+            System.out.println(tokens2);
             SuffixArray suffixArray = new SuffixArray();
             suffixArray.init(tokens);
             List<Integer> result = suffixArray.process();
@@ -80,7 +82,7 @@ public class RenameTest1 {
      * @param startIndex
      * @return
      */
-    private static int searchFragment(List<Fragment> fragments, int startIndex){
+    private static int searchFragment(List<FragmentTest> fragments, int startIndex){
         int index = -1;
         for (int i=0; i<fragments.size(); i++) {
             if (startIndex >= fragments.get(i).start && startIndex <= fragments.get(i).end) {
@@ -143,7 +145,7 @@ public class RenameTest1 {
             if (Character.isDigit(c)){
                 while (Character.isDigit(c)){
                     token += c;
-                    if (++index >= stat.length()) {
+                    if (++index > stat.length()) {
                         break;
                     }
                     c = stat.charAt(index);
@@ -155,7 +157,7 @@ public class RenameTest1 {
             if (Character.isLetter(c) || c == '_'){
                 while (Character.isLetterOrDigit(c) || c == '_'){
                     token += c;
-                    if (++index >= stat.length()) {
+                    if (++index > stat.length()) {
                         break;
                     }
                     c = stat.charAt(index);
@@ -186,7 +188,7 @@ public class RenameTest1 {
         public void init(List<Byte> tokens){
             this.tokens = tokens;
             sa = new int[tokens.size()];
-            height = new int[tokens.size()];
+            height = new int[tokens.size() + 1];
         }
 
         /**
@@ -196,6 +198,7 @@ public class RenameTest1 {
             //获取所有后缀
             List<List<Byte>> tokensList = new ArrayList<>();
             for (int i=0; i<tokens.size(); i++){
+                System.out.println(tokens.get(i));
                 tokensList.add(tokens.subList(i, tokens.size()));
             }
 
@@ -204,10 +207,10 @@ public class RenameTest1 {
                 @Override
                 public int compare(List<Byte> o1, List<Byte> o2) {
                     int size = Math.min(o1.size(), o2.size());
-                    int result = (o1.size() < o2.size())? -1: 1;
+                    int result = (o1.size() <= o2.size())? -1: 1;
 
                     for (int i=0; i<size; i++){
-                        if (o1.get(i) < o2.get(i)){
+                        if (o1.get(i) <= o2.get(i)){
                             result = -1;
                             break;
                         }else if (o1.get(i) > o2.get(i)){
@@ -266,11 +269,11 @@ public class RenameTest1 {
     /**
      * 克隆片段
      */
-    public static class Fragment{
+    public static class FragmentTest{
         public int start;
         public int end;
 
-        public Fragment(int start, int end){
+        public FragmentTest(int start, int end){
             this.start = start;
             this.end = end;
         }
