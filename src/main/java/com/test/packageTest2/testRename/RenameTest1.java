@@ -68,7 +68,8 @@ public class RenameTest1 {
             int overlapping = calculateOverlapping(clonePairs);
             int fragment1Size = fragments.get(0).end - fragments.get(0).start + 1;
             int fragment2Size = fragments.get(1).end - fragments.get(1).start + 1;
-            double similarity = overlapping * 1d / Math.max(fragment1Size, fragment2Size);
+            double similarity;
+            similarity = overlapping * 1d / Math.max(fragment1Size, fragment2Size);
             return similarity;
         }catch (Exception e){
             e.printStackTrace();
@@ -198,7 +199,6 @@ public class RenameTest1 {
             //获取所有后缀
             List<List<Byte>> tokensList = new ArrayList<>();
             for (int i=0; i<tokens.size(); i++){
-                System.out.println(tokens.get(i));
                 tokensList.add(tokens.subList(i, tokens.size()));
             }
 

@@ -1,4 +1,4 @@
-package com.test.packageTest1.testRename;
+package com.test.packageTest2.testRename;
 
 public class testRename4 {
 
@@ -8,7 +8,6 @@ public class testRename4 {
     }
 
     public void setName(String name) {
-        name = "rename";
         this.name = name;
     }
 
