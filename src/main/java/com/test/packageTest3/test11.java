@@ -3,13 +3,13 @@ package com.test.packageTest3;
 import org.springframework.stereotype.Component;
 
 @Component("c#")
-public class test10 {
+public class test11 {
 
     private int number;
     private int lifeCycle;
     private int lifecycle;
     @Deprecated
-    private String accountName;
+    private String uniqueAccountName;
     private String passWord = "abc123";
 
     public void setNumber(int number) {
@@ -59,13 +59,13 @@ public class test10 {
 
     public static void main(String[] args) {
         String codeName = "java";
-        test10 test = new test10();
+        test11 test = new test11();
         if (codeName == "java") {
             test.setNumber(3);
         }
         System.out.println(test.getNumber());
         System.out.println("test01");
-        test10 object = new test10();
+        test11 object = new test11();
         test03Inner obj = object.new test03Inner();
         obj.method01();
         object.method05();
