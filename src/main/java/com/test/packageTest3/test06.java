@@ -4,7 +4,7 @@ import org.springframework.stereotype.Component;
 
 @Deprecated
 @Component("c#")
-public class test05 {
+public class test06 {
 
     @Deprecated
     private int number;
@@ -41,12 +41,14 @@ public class test05 {
     }
 
     public static void main(String[] args) {
-        String code = "java";
-        test05 test = new test05();
-        test.setNumber(2);
+        String codeName = "java";
+        test06 test = new test06();
+        if(codeName == "java"){
+            test.setNumber(2);
+        }
         System.out.println(test.getNumber());
         System.out.println("test01");
-        test05 object = new test05();
+        test06 object = new test06();
         test03Inner obj = object.new test03Inner();
         obj.method01();
         object.method05();
