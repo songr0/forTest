@@ -16,7 +16,7 @@ public class test03 {
         return number;
     }
 
-    @Component("c++")
+    @Component("c")
     public class test03Inner {
         public void method01() {
             System.out.println("innerMethod");
