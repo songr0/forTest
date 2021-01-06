@@ -16,7 +16,7 @@ public class test03 {
         return number;
     }
 
-    @Deprecated
+    @Component("c")
     public class test01Inner {
         public void method01() {
             System.out.println("innerMethod");
