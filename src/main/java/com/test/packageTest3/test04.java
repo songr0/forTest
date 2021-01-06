@@ -2,11 +2,13 @@ package com.test.packageTest3;
 
 import org.springframework.stereotype.Component;
 
+@Deprecated
 @Component("c#")
-public class test03 {
+public class test04 {
 
     @Deprecated
     private int number;
+    private String name;
 
     public void setNumber(int number) {
         this.number = number;
@@ -23,6 +25,12 @@ public class test03 {
         }
     }
 
+    public class test04Inner {
+        public void method02() {
+            System.out.println("innerMethod2");
+        }
+    }
+
     public void method04() {
         System.out.println("outerMethod1");
     }
@@ -33,11 +41,11 @@ public class test03 {
     }
 
     public static void main(String[] args) {
-        test03 test = new test03();
+        test04 test = new test04();
         test.setNumber(1);
         System.out.println(test.getNumber());
         System.out.println("test01");
-        test03 object = new test03();
+        test04 object = new test04();
         test03Inner obj = object.new test03Inner();
         obj.method01();
         object.method04();
