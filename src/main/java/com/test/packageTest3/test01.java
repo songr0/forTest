@@ -2,8 +2,8 @@ package com.test.packageTest3;
 
 import org.springframework.stereotype.Component;
 
-@Component("c++")
-public class test01 {
+@Component("c")
+public class test02 {
 
     @Deprecated
     private int number;
@@ -23,7 +23,7 @@ public class test01 {
         }
     }
 
-    public void method02() {
+    public void method04() {
         System.out.println("outerMethod1");
     }
 
@@ -33,14 +33,14 @@ public class test01 {
     }
 
     public static void main(String[] args) {
-        test01 test = new test01();
+        test02 test = new test02();
         test.setNumber(1);
         System.out.println(test.getNumber());
         System.out.println("test01");
-        test01 object = new test01();
+        test02 object = new test02();
         test01Inner obj = object.new test01Inner();
         obj.method01();
-        object.method02();
+        object.method04();
         object.method03();
     }
 
