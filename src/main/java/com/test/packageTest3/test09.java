@@ -7,6 +7,7 @@ public class test09 {
 
     private int number;
     private int lifeCycle;
+    private int lifecycle;
     @Deprecated
     private String accountName;
 
