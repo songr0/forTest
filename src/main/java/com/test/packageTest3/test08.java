@@ -4,7 +4,7 @@ import org.springframework.stereotype.Component;
 
 @Deprecated
 @Component("c#")
-public class test06 {
+public class test08 {
 
     @Deprecated
     private int number;
@@ -20,14 +20,26 @@ public class test06 {
 
     @Component("c")
     public class test03Inner {
+
+        public class test03Inner04 {
+            public void method04() {
+                System.out.println("inner04Method");
+            }
+
+        }
+
         public void method01() {
             System.out.println("innerMethod");
         }
     }
 
     public class test05Inner {
+        String code = "java";
+
         public void method02() {
-            System.out.println("innerMethod2");
+            if (code == "java") {
+                System.out.println("innerMethod2");
+            }
         }
     }
 
@@ -42,13 +54,13 @@ public class test06 {
 
     public static void main(String[] args) {
         String codeName = "java";
-        test06 test = new test06();
-        if(codeName == "java"){
-            test.setNumber(2);
+        test08 test = new test08();
+        if (codeName == "java") {
+            test.setNumber(3);
         }
         System.out.println(test.getNumber());
         System.out.println("test01");
-        test06 object = new test06();
+        test08 object = new test08();
         test03Inner obj = object.new test03Inner();
         obj.method01();
         object.method05();
