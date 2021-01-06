@@ -2,9 +2,10 @@ package com.test.packageTest3;
 
 import org.springframework.stereotype.Component;
 
-@Component("c")
+@Component("c++")
 public class test01 {
 
+    @Deprecated
     private int number;
 
     public void setNumber(int number) {
