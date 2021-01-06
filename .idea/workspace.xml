@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e3953be-6a2e-4729-8505-a6ec77ecddd8" name="Default Changelist" comment="" />
+    <list default="true" id="3e3953be-6a2e-4729-8505-a6ec77ecddd8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/packageTest3/test01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/packageTest3/test01.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,7 +54,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../gitTest" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -114,7 +117,7 @@
       <workItem from="1602224404816" duration="411000" />
       <workItem from="1602225174846" duration="758000" />
       <workItem from="1602467597875" duration="348000" />
-      <workItem from="1609897934609" duration="359000" />
+      <workItem from="1609897934609" duration="1993000" />
     </task>
     <servers />
   </component>
@@ -137,6 +140,16 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1609898309225">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1609898309225" />
+    <state x="513" y="109" key="refactoring.ChangeSignatureDialog" timestamp="1609899339199">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="513" y="109" key="refactoring.ChangeSignatureDialog/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1609899339199" />
   </component>
   <component name="masterDetails">
     <states>
