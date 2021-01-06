@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e3953be-6a2e-4729-8505-a6ec77ecddd8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/packageTest3/test03.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/packageTest3/test04.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/packageTest3/test04.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/packageTest3/test04.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +116,7 @@
       <workItem from="1602224404816" duration="411000" />
       <workItem from="1602225174846" duration="758000" />
       <workItem from="1602467597875" duration="348000" />
-      <workItem from="1609897934609" duration="3949000" />
+      <workItem from="1609897934609" duration="4450000" />
     </task>
     <servers />
   </component>
