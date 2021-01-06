@@ -17,7 +17,7 @@ public class test03 {
     }
 
     @Component("c++")
-    public class test02Inner {
+    public class test03Inner {
         public void method01() {
             System.out.println("innerMethod");
         }
@@ -38,7 +38,7 @@ public class test03 {
         System.out.println(test.getNumber());
         System.out.println("test01");
         test03 object = new test03();
-        test02Inner obj = object.new test02Inner();
+        test03Inner obj = object.new test03Inner();
         obj.method01();
         object.method04();
         object.method03();
