@@ -22,12 +22,14 @@ public class test09 {
 
         public class test03Inner04 {
             public void method04() {
-                System.out.println("inner04Method");
+                System.out.println("inner04Method2");
             }
 
         }
 
         public void method01() {
+            test03Inner04 test04 = new test03Inner04();
+            test04.method04();
             System.out.println("innerMethod");
         }
     }
