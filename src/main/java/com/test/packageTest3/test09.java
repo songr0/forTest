@@ -6,8 +6,9 @@ import org.springframework.stereotype.Component;
 public class test09 {
 
     private int number;
+    private int lifeCycle;
     @Deprecated
-    private String name;
+    private String accountName;
 
     public void setNumber(int number) {
         this.number = number;
